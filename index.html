@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Fashion Diary</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='nav.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='secondpart.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='thirdpart.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="title">Fashion Diary</div>
+        <div class="menu">
+            <div class="items">Home</div>
+            <div class="items">About</div>
+            <div class="items">Blog</div>
+            <div class="items">Contact</div>
+        </div>
+        <div class="hideitems" id="linesbutton">
+            <div class="close"
+                onmousedown="closebutton(this);">X
+            </div>
+            <div class="items">Home</div>
+            <div class="items">About</div>
+            <div class="items">Blog</div>
+            <div class="items">Contact</div>
+        </div>
+        <div class="hidemenu">
+            <div class="lines" onmousedown="press(this);">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        
+        <div class="memo">
+            Style Is A<br/>Choice.<br/>Make Yours.
+        </div>
+    </nav>
+
+    <section class="SecPart">     
+      
+        <div class="col">
+            <div class="block Pic leftpic">
+                <div class="word">
+                    <div class="theme">Read</div>
+                    <div class="article">The Blog</div>
+                    <div class="press">
+                        <span class="case">Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div class="block text">
+                <div class="word">
+                    <div class="theme">Hello</div>
+                    <div class="article">I'm Roy</div>
+                    <div class="press">
+                        <span class="case">Read More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-------區塊分割------->
+        
+        <div class="col">
+            <div class="block text">
+                <div class="word">
+                    <div class="theme">Advertise With</div>
+                    <div class="article">Fashion Diva</div>
+                    <div class="press">
+                        <span class="case">Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div class="block Pic rightpic">
+                <div class="word">
+                    <div class="theme">Contribute</div>
+                    <div class="article">To The Blog</div>
+                    <div class="press">
+                        <span class="case">Read More</span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    
+    </section>
+    
+    <section class="ThirdPart">
+        <div class="block">
+            <div class="left pic1"></div>
+            
+            <div class="right">
+                <div class="title">What I Wore: Travel Edition</div>
+                <div class="text">I like travel ,like sea,coast ,like nature . And wish I can go to many country for trip and experience every thing . And I can record every thing when I experience by my eyes and camera .</div>
+                <hr class="line"></hr>
+                <div class="remark">
+                    <span class="view">99 Views</span>
+                    <span class="comment">Write a comment</span>
+                </div>
+            </div>
+        </div>
+    <!-----------------區塊分割--------------->
+        <div class="block">
+            <div class="left pic2"></div>
+        
+            <div class="right">
+                <div class="title">Picking the Perfect Booties for You</div>
+                <div class="text">I like travel ,like sea,coast ,like nature . And wish I can go to many country for trip and experience every thing . And I can record every thing when I experience by my eyes and camera .</div>
+                <hr class="line"></hr>
+                <div class="remark">
+                    <span class="view">99 Views</span>
+                    <span class="comment">Write a comment</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">2020 by Roy</div>
+    </section>
+    <script src="pressbutton.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+section.ThirdPart{
+    padding: 40px 0px;
+    background-color:rgba(187, 220, 255,0.1);
+}
+section.ThirdPart>.block{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    margin-bottom: 40px;
+}
+section.ThirdPart>.block>.left{
+    width: 470px;
+    box-sizing: border-box;
+    border: 1px solid #c9c9c9;
+} 
+section.ThirdPart>.block>.pic1{
+    background-image: url(jer.jpg);
+    background-size: cover;
+    opacity: 0.5; transition: opacity 0.5s;
+}
+section.ThirdPart>.block>.pic1:hover{
+    opacity: 1 ;
+}
+section.ThirdPart>.block>.pic2{
+    background-image: url(john.jpg);
+    background-size:cover;
+    opacity: 0.5; transition: opacity 0.5s;
+}
+section.ThirdPart>.block>.pic2:hover{
+    opacity: 1 ;
+}
+section.ThirdPart>.block>.right{
+    width: 470px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    border: 1px solid #c9c9c9;
+}
+section.ThirdPart>.block>.right>.title{
+    font-size: 170%;font-weight: bold;
+    padding-top: 30px;
+}
+section.ThirdPart>.block>.right>.text{
+    font-size: 90%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color:rgb(146, 146, 146);
+    line-height: 150%;
+}
+section.ThirdPart>.block>.right>.remark{
+    font-size: 70%;
+    padding-top: 5px;
+    color:rgb(146, 146, 146);
+}
+section.ThirdPart>.block>.right>.remark>.view{
+    padding-right:20px;
+}
+section.ThirdPart>.footer{
+    color: white;
+    font-size: 30%;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+@media (max-width:910px){
+    section.ThirdPart>.block>.right>.text{
+        font-size: 80%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    section.ThirdPart>.block>.right>.title{
+        font-size: 140%;
+        padding-top: 15px;
+    }
+}
+@media (max-width:750px){
+    section.ThirdPart>.block{
+        flex-wrap: wrap; 
+        height: 90%;
+    }
+    section.ThirdPart>.block>.left{
+        width: 80%; height: 175px;
+    }
+    section.ThirdPart>.block>.right{
+        width: 80%;   
+    }
+    section.ThirdPart>.block>.right>.text{
+        font-size: 80%;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    section.ThirdPart>.block>.right>.title{
+        font-size: 110%;
+        padding-top: 10px;
+    }
+    section.ThirdPart>.block>.right>.remark{
+        font-size: 60%;
+        padding:5px 0px ;
+    }
+}
+
+

@@ -1,0 +1,68 @@
+section.SecPart{
+    display: flex;
+    justify-content: center;
+    padding: 45px 0px;
+}
+section.SecPart>.col{
+    width: 450px;margin: 20px;
+}
+section.SecPart>.col>.Pic{
+    width: 100%;height: 500px;
+    text-align: center;color: #ffffff;
+}
+section.SecPart>.col>.leftpic{
+    background-image: url(jeremy.jpg);
+    background-size: cover;
+}
+section.SecPart>.col>.rightpic{
+    background-image: url(ianh.jpg);
+    background-size: cover;
+}
+/*----------------------------------*/
+section.SecPart>.col>.text{
+    width: 100%;height: 300px;
+    text-align: center;color: #000000;
+    box-sizing: border-box;
+    border: 4px solid #000000;
+    line-height:60%;
+    background-color:rgba(180, 180, 180, 0.1);
+}
+section.SecPart>.col>.block{
+    margin-bottom: 40px ;
+    display: flex;align-items: center;
+    justify-content: center;
+}
+section.SecPart>.col>.block>.word{
+    width: 100%;
+}
+section.SecPart>.col>.block>.word>.theme{
+    font-family:'Pacifico', cursive;
+    font-weight: bold;
+    margin-bottom: 40px ;
+    font-size: 180%;    
+}
+section.SecPart>.col>.block>.word>.article{
+    font-size: 120%;
+    margin-bottom: 50px ;
+}
+section.SecPart>.col>.block>.word>.press>.case{
+    padding: 5px 10px; cursor: pointer;
+    background-color:rgba(0,0,0,0.3);
+    border: 1px solid #ffffff;
+    color: #ffffff; transition: background-color 0.5s;
+}
+section.SecPart>.col>.block>.word>.press>.case:hover{
+    background-color:rgba(0,0,0,1);
+}
+@media(max-width:750px){
+    section.SecPart{
+        flex-wrap: wrap;
+    }
+    section.SecPart>.col{
+        width: 90%; margin: 10px 0px;
+    }
+    section.SecPart>.col:nth-child(2){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
